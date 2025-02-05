@@ -106,10 +106,14 @@
       <li>LongShots</li>
       <li>RangedHeavy</li>
     </weaponClasses>
+    <tradeTags>
+      <li>Artifact</li>
+    </tradeTags>
     <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
     <statBases>
       <WorkToMake>50000</WorkToMake>
       <Mass>3.5</Mass>
+      <MarketValue>2500</MarketValue>
       <AccuracyTouch>0.85</AccuracyTouch>
       <AccuracyShort>0.70</AccuracyShort>
       <AccuracyMedium>0.50</AccuracyMedium>
@@ -190,10 +194,14 @@
       <li>LongShots</li>
       <li>RangedHeavy</li>
     </weaponClasses>
+    <tradeTags>
+      <li>Artifact</li>
+    </tradeTags>
     <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
     <statBases>
       <WorkToMake>50000</WorkToMake>
       <Mass>3.5</Mass>
+      <MarketValue>2500</MarketValue>
       <AccuracyTouch>0.85</AccuracyTouch>
       <AccuracyShort>0.70</AccuracyShort>
       <AccuracyMedium>0.50</AccuracyMedium>
