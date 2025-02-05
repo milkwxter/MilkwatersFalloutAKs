@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Milkwater's Fallout AKs</name>
+	<author>Milkwater</author>
+	<description>Adds 3 new fallout AK platform guns to your game.\n\nThere are two special variants, each one has different stats but comes with the unique "Furious" effect. Hitting the same pawn multiple times will increase the amount of damage dealt.\n\nRaiders will use them sometimes and you can craft them by going through the normal research tree.</description>
+	<supportedVersions>
+		<li>1.5</li>
+	</supportedVersions>
+	<packageId>Milkwater.FalloutAKs</packageId>
+</ModMetaData>

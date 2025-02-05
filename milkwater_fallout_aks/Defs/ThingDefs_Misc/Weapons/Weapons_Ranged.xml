@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+
+  <!-- Handmade rifle -->
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>Milkwater_Handmade_Rifle</defName>
+    <label>handmade rifle</label>
+    <description>A handmade slug-thrower that uses some pretty big rounds. It will rip through most armor, but is limited by a shorter range than most firearms.</description>
+    <graphicData>
+      <texPath>Things/Weapons/m_handmade_rifle</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_SMG</soundInteract>
+    <weaponClasses>
+      <li>ShortShots</li>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+    <recipeMaker>
+      <researchPrerequisite>GasOperation</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+      <displayPriority>440</displayPriority>
+    </recipeMaker>
+    <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+    <statBases>
+      <WorkToMake>12000</WorkToMake>
+      <Mass>3.5</Mass>
+      <AccuracyTouch>0.75</AccuracyTouch>
+      <AccuracyShort>0.60</AccuracyShort>
+      <AccuracyMedium>0.30</AccuracyMedium>
+      <AccuracyLong>0.10</AccuracyLong>
+      <RangedWeapon_Cooldown>1.65</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>75</Steel>
+      <ComponentIndustrial>4</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_Milkwater_HandmadeRifle</defaultProjectile>
+        <warmupTime>0.9</warmupTime>
+        <range>20</range>
+        <burstShotCount>4</burstShotCount>
+        <ticksBetweenBurstShots>12</ticksBetweenBurstShots>
+        <soundCast>Milkwater_Shot_HandmadeRifle</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <weaponTags>
+      <li>IndustrialGun</li>
+      <li>ShortShots</li>
+    </weaponTags>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_Milkwater_HandmadeRifle</defName>
+    <label>handmade rifle bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>14</damageAmountBase>
+	  <armorPenetrationBase>1.6</armorPenetrationBase>
+      <speed>60</speed>
+    </projectile>
+  </ThingDef>
+  
+  <!-- Problem solver -->
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>Milkwater_Problem_Solver</defName>
+    <label>problem solver</label>
+    <description>A unique handmade slug-thrower that uses some pretty big rounds. It will rip through most armor, and comes with a unique legendary effect.\n\n"Furious" effect: Hitting a pawn will inflict the "Furious proc" hediff for 5 seconds. Every time you hit a pawn with that hediff, you will deal more damage based on the severity of the hediff, as well as increasing the severity. After 5 seconds it will run out.</description>
+    <graphicData>
+      <texPath>Things/Weapons/m_problemsolver</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>1.2</drawSize>
+    </graphicData>
+    <soundInteract>Interact_SMG</soundInteract>
+    <weaponClasses>
+      <li>LongShots</li>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+    <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+    <statBases>
+      <WorkToMake>50000</WorkToMake>
+      <Mass>3.5</Mass>
+      <AccuracyTouch>0.85</AccuracyTouch>
+      <AccuracyShort>0.70</AccuracyShort>
+      <AccuracyMedium>0.50</AccuracyMedium>
+      <AccuracyLong>0.30</AccuracyLong>
+      <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>120</Steel>
+      <ComponentIndustrial>7</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_Milkwater_ProblemSolver</defaultProjectile>
+        <warmupTime>0.9</warmupTime>
+        <range>23</range>
+        <burstShotCount>4</burstShotCount>
+        <ticksBetweenBurstShots>12</ticksBetweenBurstShots>
+        <soundCast>Milkwater_Shot_ProblemSolver</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <weaponTags>
+      <li>IndustrialGun</li>
+      <li>LongShots</li>
+    </weaponTags>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_Milkwater_ProblemSolver</defName>
+    <label>problem solver bullet</label>
+	<thingClass>ProjectileFurious</thingClass>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>16</damageAmountBase>
+	  <armorPenetrationBase>1.6</armorPenetrationBase>
+      <speed>60</speed>
+    </projectile>
+  </ThingDef>
+  
+  <!-- Splattercannon -->
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>Milkwater_SplatterCannon</defName>
+    <label>splattercannon</label>
+    <description>A unique handmade slug-thrower that uses some pretty big rounds. It will rip through most armor, and comes with a unique legendary effect.\n\n"Furious" effect: Hitting a pawn will inflict the "Furious proc" hediff for 5 seconds. Every time you hit a pawn with that hediff, you will deal more damage based on the severity of the hediff, as well as increasing the severity. After 5 seconds it will run out.</description>
+    <graphicData>
+      <texPath>Things/Weapons/m_splattercannon</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>1.4</drawSize>
+    </graphicData>
+    <soundInteract>Interact_SMG</soundInteract>
+    <weaponClasses>
+      <li>LongShots</li>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+    <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+    <statBases>
+      <WorkToMake>50000</WorkToMake>
+      <Mass>3.5</Mass>
+      <AccuracyTouch>0.85</AccuracyTouch>
+      <AccuracyShort>0.70</AccuracyShort>
+      <AccuracyMedium>0.50</AccuracyMedium>
+      <AccuracyLong>0.30</AccuracyLong>
+      <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>120</Steel>
+      <ComponentIndustrial>7</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_Milkwater_SplatterCannon</defaultProjectile>
+        <warmupTime>0.9</warmupTime>
+        <range>25</range>
+        <burstShotCount>4</burstShotCount>
+        <ticksBetweenBurstShots>12</ticksBetweenBurstShots>
+        <soundCast>Milkwater_Shot_SplatterCannon</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <weaponTags>
+      <li>IndustrialGun</li>
+      <li>LongShots</li>
+    </weaponTags>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_Milkwater_SplatterCannon</defName>
+    <label>splattercannon bullet</label>
+	<thingClass>ProjectileFurious</thingClass>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>14</damageAmountBase>
+	  <armorPenetrationBase>1.6</armorPenetrationBase>
+      <speed>60</speed>
+    </projectile>
+  </ThingDef>
+
+</Defs>
